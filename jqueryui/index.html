@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>jQuery UI</title>
+<!-- Triplety Version: 1.0.0 -->
+<link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.10.3/themes/ui-lightness/jquery-ui.min.css">
+
+<style>
+
+div{
+	width: 150px;
+	height: 100px;
+  float: left;
+	text-align: center;
+	overflow: hidden;
+  margin: 5px;
+}
+
+</style>
+
+
+</head>
+
+<body>
+<div class="ui-widget-content">
+  <p>Drag me around.</p>
+	<p>Resize me.</p>  
+</div> 
+<div class="ui-widget-content">
+  <p>Drag me around.</p>
+	<p>Resize me.</p>
+</div>
+<div class="ui-widget-content">
+  <p>Drag me around.</p>
+	<p>Resize me.</p>
+</div>
+<script src="library/jquery-2.0.3.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+
+<script>
+
+$(function() {
+	
+	$('div').draggable().resizable();
+	
+});
+</script>
+
+
+</body>
+
+</html>
