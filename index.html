@@ -1,10 +1,56 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script type="text/javascript" src="TacoComponents/TSWBrowserDetect.js"></script>
+<script type="text/javascript" src="TacoComponents/TSWUtils.js"></script>
+<script type="text/javascript" src="TacoComponents/TSWDomUtils.js"></script>
+<script type="text/javascript" src="TacoComponents/TSWTabbedContent.js"></script>
+<link rel="stylesheet" type="text/css" href="TacoComponents/TSWTabbedContent_myTabbedContent.css" />
+
+<!-- END COMPONENT Drop Shadow - Taco HTML Edit -->
+<script type="text/javascript" src="TacoComponents/TSWDateAndTime.js"></script>
 </head>
 <body>
-	<h3> Hello! </h3>
-	<a href="jqueryui/index.html">jqueryui</a>
-	<a href="createjs/index.html">createjs</a>
+
+	<h1> Hello World! </h1>
+
+<!-- BEGIN COMPONENT Tabbed Content - Taco HTML Edit -->
+<div id="myTabbedContent">
+	<ul class="tswTabBox">
+		<li class="tswTabSelected"><a>jQuery UI</a></li>
+		<li><a>Create.js</a></li>
+	</ul>
+	<div class="tswTabContent">
+		<div class="tswTabContentSelected">
+			<br/>
+			<h3><a href="jqueryui/index.html">jQuery UI</a></h3>
+			<p> This is the page demonstrate the ability of building the UI Blocks using the jQuery UI library </p>
+		</div>
+		<div class="tswTabContentUnselected">
+			<br/>
+			<h3><a href="createjs/index.html">Create.js</a></h3>
+			<p> Using Create.js to turn the web page into a big drawing canvas! </p>
+		</div>
+	</div>
+</div>
+
+
+<br/><br/><br/>
+<!-- BEGIN COMPONENT Date and Time - Taco HTML Edit -->
+<span>
+	<script type="text/javascript">
+	document.write(tswDateFormat(new Date(), "MMMM d, yyyy, h:mm a zzzz"));
+	</script>
+</span>
+
+<!-- END COMPONENT Date and Time - Taco HTML Edit -->
+
+<script type="text/javascript">
+	//Initialize tabbed content
+	var tabbedContent = tswTabbedContentGetForId('myTabbedContent');
+	tabbedContent.animationDuration = 700;
+</script>
+
+<!-- END COMPONENT Tabbed Content - Taco HTML Edit -->
 </body>
 </html>
