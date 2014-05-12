@@ -1,56 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script type="text/javascript" src="TacoComponents/TSWBrowserDetect.js"></script>
-<script type="text/javascript" src="TacoComponents/TSWUtils.js"></script>
-<script type="text/javascript" src="TacoComponents/TSWDomUtils.js"></script>
-<script type="text/javascript" src="TacoComponents/TSWTabbedContent.js"></script>
-<link rel="stylesheet" type="text/css" href="TacoComponents/TSWTabbedContent_myTabbedContent.css" />
+  <!-- Standard Meta -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-<!-- END COMPONENT Drop Shadow - Taco HTML Edit -->
-<script type="text/javascript" src="TacoComponents/TSWDateAndTime.js"></script>
+  <!-- Site Properities -->
+  <title>Homepage Example - Semantic</title>
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Open+Sans:300italic,400,300,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="packaged/css/semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
-<body>
+<body id="home">
+  <div class="ui inverted page grid masthead segment">
+    <div class="column">
+      <div class="ui hidden transition information">
+        <h1 class="ui inverted header">Software-Defined Network Project</h1>
+        <p>Dynamically Change Network Topology for Software-Defined Network by Analyzing Network Packets</p>
+      </div>
+    </div>
+  </div>
+		
+		<p>imulation are given as follows: time step size ∆t = 0.00001, the slope of nonlinearity in the sigmoid function u0 = 0.01, and the iteration number is 100. In each experiment, the HNN can converge to a valid solution after 100 it- erations. Our method to obtain a solution at the stable state is that the 4 routes whose corresponding neurons have the largest values are determined to be the final alternative routes.
+We have done 20 experiments and a valid solution is obtained in each experiment. The good stability of our al- gorithm is demonstrated in two aspects. First from thevalue of the objective function computed in each experiment, as shown in Fig. 3. We see that the dynamic range of the objective function is very small (< ±0.045% ). Second, we have also noted that there is little difference between the routes included in two distinct solutions.
+Fig. 3. Values of objective function obtained in phase I
+We choose the best solution in Fig. 3, and thus obtain the finally selected alternative routes (not shown due to limited space).
+6.3. Neural computation for optimal routing
+Now we use the neural computation approach presented in Section 4 to solve the optimal routing problem.
+As stated earlier, when the NN converges to a stable state, the output Vij of the neuron ij denotes the portion of the flow of commodity i that will be transmitted over the the jth alternative route. Thus as long as we get a solu- tion, the average time delay corresponding to this solution can be calculated in terms of (7). However, two issues must be clarified in the calculation. First, when the NN converges, constraint (10a) may be not strictly satisfied.
+11
+R i
+Therefore, after we get a solution, Vij is normalized in terms of Vij = Vij / ∑Vij . Second, when we formulate a j
+practical solution, i.e. to calculate how many packets should be distributed to each alternativ</p>
 
-	<h1> Hello World! </h1>
-
-<!-- BEGIN COMPONENT Tabbed Content - Taco HTML Edit -->
-<div id="myTabbedContent">
-	<ul class="tswTabBox">
-		<li class="tswTabSelected"><a>jQuery UI</a></li>
-		<li><a>Create.js</a></li>
-	</ul>
-	<div class="tswTabContent">
-		<div class="tswTabContentSelected">
-			<br/>
-			<h3><a href="jqueryui/index.html">jQuery UI</a></h3>
-			<p> This is the page demonstrate the ability of building the UI Blocks using the jQuery UI library </p>
-		</div>
-		<div class="tswTabContentUnselected">
-			<br/>
-			<h3><a href="createjs/index.html">Create.js</a></h3>
-			<p> Using Create.js to turn the web page into a big drawing canvas! </p>
-		</div>
-	</div>
-</div>
-
-
-<br/><br/><br/>
-<!-- BEGIN COMPONENT Date and Time - Taco HTML Edit -->
-<span>
-	<script type="text/javascript">
-	document.write(tswDateFormat(new Date(), "MMMM d, yyyy, h:mm a zzzz"));
-	</script>
-</span>
-
-<!-- END COMPONENT Date and Time - Taco HTML Edit -->
-
-<script type="text/javascript">
-	//Initialize tabbed content
-	var tabbedContent = tswTabbedContentGetForId('myTabbedContent');
-	tabbedContent.animationDuration = 700;
-</script>
-
-<!-- END COMPONENT Tabbed Content - Taco HTML Edit -->
+		<p>imulation are given as follows: time step size ∆t = 0.00001, the slope of nonlinearity in the sigmoid function u0 = 0.01, and the iteration number is 100. In each experiment, the HNN can converge to a valid solution after 100 it- erations. Our method to obtain a solution at the stable state is that the 4 routes whose corresponding neurons have the largest values are determined to be the final alternative routes.
+We have done 20 experiments and a valid solution is obtained in each experiment. The good stability of our al- gorithm is demonstrated in two aspects. First from thevalue of the objective function computed in each experiment, as shown in Fig. 3. We see that the dynamic range of the objective function is very small (< ±0.045% ). Second, we have also noted that there is little difference between the routes included in two distinct solutions.
+Fig. 3. Values of objective function obtained in phase I
+We choose the best solution in Fig. 3, and thus obtain the finally selected alternative routes (not shown due to limited space).
+6.3. Neural computation for optimal routing
+Now we use the neural computation approach presented in Section 4 to solve the optimal routing problem.
+As stated earlier, when the NN converges to a stable state, the output Vij of the neuron ij denotes the portion of the flow of commodity i that will be transmitted over the the jth alternative route. Thus as long as we get a solu- tion, the average time delay corresponding to this solution can be calculated in terms of (7). However, two issues must be clarified in the calculation. First, when the NN converges, constraint (10a) may be not strictly satisfied.
+11
+R i
+Therefore, after we get a solution, Vij is normalized in terms of Vij = Vij / ∑Vij . Second, when we formulate a j
+practical solution, i.e. to calculate how many packets should be distributed to each alternativ</p>
+  
+  <div class="ui inverted page grid masthead segment sticky">
+    <div class="ten wide left aligned column">
+	      <a class="item"><i class="big circular mail icon"></i></a>
+			  <a class="item"><i class="big circular github icon"></i></a>
+				<a class="item"><i class="big circular facebook icon"></i></a>
+    </div>
+  </div>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
+  <script src="packaged/javascript/semantic.min.js"></script>
+  <script src="js/index.js"></script>
 </body>
 </html>
