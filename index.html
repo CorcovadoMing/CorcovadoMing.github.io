@@ -16,41 +16,47 @@
   <div class="ui inverted page grid masthead segment">
     <div class="column">
       <div class="ui hidden transition information">
-        <h1 class="ui inverted header">Software-Defined Network Project</h1>
-        <p>Dynamically Change Network Topology for Software-Defined Network by Analyzing Network Packets</p>
+        <h2 class="ui inverted header">Dynamically Change Network Topology for Software-Defined Network by Analyzing Network Packets</h2>
+        <p>National Taiwan Normal University, Ming, 2014 Project</p>
       </div>
     </div>
   </div>
 	
 	<div class="clearing">
 		<div class="ui raised segment">
-			<div class="ui blue label">Introduction</div>
-			<p></p>
-		  <div class="ui red label">Content</div>
-		  <p>imulation are given as follows: time step size ∆t = 0.00001, the slope of nonlinearity in the sigmoid function u0 =
-				0.01, and the iteration number is 100. In each experiment, the HNN can converge to a valid solution after 100 it- 
-				erations. Our method to obtain a solution at the stable state is that the 4 routes whose corresponding neurons have the 
-				largest values are determined to be the final alternative routes.
-				We have done 20 experiments and a valid solution is obtained in each experiment. The good stability of our al- gorithm 
-				is demonstrated in two aspects. First from thevalue of the objective function computed in each experiment, as shown in 
-				Fig. 3. We see that the dynamic range of the objective function is very small (< ±0.045% ). Second, we have also noted 
-				that there is little difference between the routes included in two distinct solutions.
-
-				Fig. 3. Values of objective function obtained in phase I
-				We choose the best solution in Fig. 3, and thus obtain the finally selected alternative routes (not shown due to 
-				limited space).
-				6.3. Neural computation for optimal routing
-				Now we use the neural computation approach presented in Section 4 to solve the optimal routing problem.
-				As stated earlier, when the NN converges to a stable state, the output Vij of the neuron ij denotes the portion of the 
-				flow of commodity i that will be transmitted over the the jth alternative route. Thus as long as we get a solu- tion, 
-				the average time delay corresponding to this solution can be calculated in terms of (7). However, two issues must be 
-				clarified in the calculation. First, when the NN converges, constraint (10a) may be not strictly satisfied. 11 R i
-				Therefore, after we get a solution, Vij is normalized in terms of Vij = Vij / ∑Vij . Second, when we formulate a j
-				practical solution, i.e. to calculate how many packets should be distributed to each alternativ
-			</p>
-			<div class="ui purple label">Reference</div>
-			<p></p>
-			
+			<div class="ui divided selection list">
+				<a class="item"><div class="ui blue horizontal label">Introduction</div><p></p></a>
+			  <a class="item"><div class="ui red horizontal label">Progress</div>
+					<blockquote><p><div class="ui circular black label">5/12</div></p>
+			  		<blockquote><p><div class="ui circular label">Weekly Goal</div>
+							<p>1. Research neural network routing Algorithms</p>
+							<p>2. How to implement in SDN controller</p>
+							<br></br>
+							<p><div class="ui circular label">Achieve</div></p>
+							<p>Project site is ready</p>
+						</p></blockquote>
+					</blockquote>
+				</a>
+				<a class="item"><div class="ui purple horizontal label">Reference</div>
+					<blockquote><p>
+					<p>[1] The Road to SDN, Nick Feamster, Jennifer Rexford, Ellen Zegura, 2013.</p>
+					<p>[2] Ethane: Taking Control of the Enterprise, Martìn Casado, Michael J. Freedman, Justin Pettit, Jianying Luo, Nick 
+					McKeown, Scott Shenker, Sigcomm 2007.</p>
+					<p>[3] Design and Implementation of a Routing Control Platform, Matthew Caesar, Donald Caldwell, Nick Feamster, 
+					Jennifer Rexford, Aman Shaikh, Jacobus van der Merwe, NSDI 2005.</p>
+					<p>[4] OpenFlow: Enabling Innovation in Campus Networks, Nick McKeown, Tom Anderson, Hari Balakrishnan, Guru Parulkar, 
+					Larry Peterson, Jennifer Rexford, Scott Shenker, Jonathan Turner, CCR 2008.</p>
+					<p>[5] DevoFlow: Scaling Flow Management for High-performance Networks, Andrew R. Curtis, Jeffrey C. Mogul, Jean 
+					Tourrilhes, Praveen Yalagandula, Puneet Sharma, Sujata Banerjee, Sigcomm 2011.</p>
+					<p>[6] Hedera: Dynamic Flow Scheduling for Data Center Networks, Mohammad Al-Fares, Sivasankar Radhakrishnan, Barath 
+					Raghavan, Nelson Huang, Amin Vahdat, NSDI 2010.</p>
+					<p>[7] ElasticTree: Saving Energy in Data Center Networks, Brandon Heller, Srini Seetharaman, Priya Mahadevan, Yannis 
+					Yakoumis, Puneet Sharma, Sujata Banerjee, Nick McKeown, NSDI 2010.</p>
+					</p>[8] Introduction to Data Mining, Pang-Ning Tan, Michael Stinbach, Vipin Kumar, Pearson, 2008.</p>
+					</p>[9] A network in a laptop: rapid prototyping for software-defined networks, B Lantz, B Heller, N McKeown – 
+					Proceedings of the 9th ACM SIGCOMM Workshop on Hot Topics in Network, Article No. 19, 2010.</p>
+					</p></blockquote></a>
+			</div>
   	</div>
 	</div>
 	
