@@ -10,7 +10,7 @@ body {
 
 body {
   font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  background: #FFFFFF;
+  background: #FEFFED;
   margin: 0px;
   padding: 0px;
   color: #555555;
@@ -48,27 +48,15 @@ h5.ui.header,
 }
 
 a {
-  color: gray;
+  color: white;
   text-decoration: none;
-  -webkit-transition: color 0.5s ease;
-  -moz-transition: color 0.5s ease;
-  transition: color 0.5s ease;
-}
-
-.email {
-  color: #00BBCC;
-  text-decoration: none;
-  -webkit-transition: color 0.5s ease;
-  -moz-transition: color 0.5s ease;
-  transition: color 0.5s ease;
-}
-
-.email:hover {
-	color: gray;
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 a:hover {
-  color: black;
+  color: #007799;
 }
 
 p a {
@@ -84,19 +72,8 @@ p a {
 }
 
 .ui.page.grid.segment {
-  padding-top: 7rem;
-  padding-bottom: 7rem;
-}
-
-.masthead.segment {
-  background-image: url(images/bg.jpg);
-  -webkit-background-size: cover;
-  background-size: cover;
-  margin: 0em;
-  padding-top: 4rem;
-  overflow: hidden;
-  -webkit-box-shadow: 0 -20px 10px 0 rgba(0, 0, 0, 0.1) inset !important;
-  box-shadow: 0 -20px 10px 0 rgba(0, 0, 0, 0.1) inset !important;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .masthead.segment .column {
@@ -104,12 +81,12 @@ p a {
 }
 
 .masthead.segment .information {
-  margin: 3em 1em 1em 280px;
+  margin: 3em 1em 1em 0px;
 }
 
 .masthead.segment .information p {
   max-width: 600px;
-  margin: 0em 0px 2em 0em;
+  margin: 0em 0px 2em 2em;
   font-size: 1.2em;
 }
 
@@ -145,8 +122,8 @@ p a {
 
 @media only screen and (max-width : 768px) {
   .ui.page.grid.segment {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
   }
 
   .menu .right.menu > .item {
@@ -164,10 +141,6 @@ p a {
   .masthead.segment {
     -webkit-background-size: auto;
     background-size: auto;
-  }
-
-  .masthead.segment .information {
-    margin-left: 190px;
   }
 
   .masthead.segment .image {
