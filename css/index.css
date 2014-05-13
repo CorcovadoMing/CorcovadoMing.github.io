@@ -10,7 +10,7 @@ body {
 
 body {
   font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  background: #FFFFFF;
+  background: #FEFFED;
   margin: 0px;
   padding: 0px;
   color: #555555;
@@ -56,7 +56,7 @@ a {
 }
 
 a:hover {
-  color: #00BAFF;
+  color: #007799;
 }
 
 p a {
@@ -74,10 +74,6 @@ p a {
 .ui.page.grid.segment {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.masthead.segment {
-  background-image: url(../images/bg.jpg);
 }
 
 .masthead.segment .column {
