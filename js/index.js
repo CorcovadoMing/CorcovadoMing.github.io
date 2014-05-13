@@ -47,7 +47,7 @@ $(document)
       })
     ;
 
-    $('.masthead .information')
+    $('.information')
       .transition('scale in')
     ;
 
