@@ -47,12 +47,12 @@ h5.ui.header,
   text-decoration: none;
 }
 
-a {
-  color: gray;
-  text-decoration: none;
-  -webkit-transition: color 0.5s ease;
-  -moz-transition: color 0.5s ease;
-  transition: color 0.5s ease;
+.ui.animated.selection.list a {
+  color: #CCCCCC;
+}
+
+.ui.animated.selection.list a:hover {
+  color: #88888;
 }
 
 .email {
@@ -65,6 +65,14 @@ a {
 
 .email:hover {
 	color: gray;
+}
+
+a {
+  color: gray;
+  text-decoration: none;
+  -webkit-transition: color 0.5s ease;
+  -moz-transition: color 0.5s ease;
+  transition: color 0.5s ease;
 }
 
 a:hover {
