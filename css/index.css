@@ -26,10 +26,16 @@ body {
   font-family: 'Source Sans Pro', "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
-.ui.header,
-h1,
-h2 {
+h1 {
+  color: rgba(200, 200, 200, .9);
+  text-shadow: 5px 5px 5px #111;
+}
+
+h2,
+h4 {
+  color: rgba(220, 220, 220, .9);
   font-weight: normal !important;
+  text-shadow: 5px 5px 5px #111;
 }
 
 h1.ui.header {
@@ -52,7 +58,7 @@ h5.ui.header,
 }
 
 .ui.animated.selection.list a:hover {
-  color: #88888;
+  color: #888888;
 }
 
 .email {
@@ -82,6 +88,7 @@ a:hover {
 p a {
   font-weight: bold;
 }
+
 
 /*******************************
             Global

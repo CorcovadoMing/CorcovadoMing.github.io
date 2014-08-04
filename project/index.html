@@ -1,86 +1,131 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <!-- Standard Meta -->
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <!-- Standard Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <!-- Site Properities -->
-  <title>SDN Project</title>
-  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Open+Sans:300italic,400,300,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="../packaged/css/semantic.min.css">
-  <link rel="stylesheet" type="text/css" href="css/index.css">
+    <!-- Site Properities -->
+    <title>SDN Project</title>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Open+Sans:300italic,400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../packaged/css/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body id="home">
-  <div class="ui inverted page grid teal masthead segment">
-    <div class="column">
-      <div class="ui hidden transition information">
-        <h1 class="ui inverted header">Dynamically Change Network Topology for Software-Defined Network by Analyzing Network Packets</h1>
-        <p>National Taiwan Normal University, Ming, 2014 Project</p>
-      </div>
+    <div class="ui inverted page grid teal masthead segment">
+        <div class="column">
+            <div class="ui hidden transition information">
+                <h1 class="ui inverted header">Dynamically Change Network Topology for Software-Defined Network by Analyzing Network Packets</h1>
+                <p>National Taiwan Normal University, Ming, 2014 Project</p>
+            </div>
+        </div>
     </div>
-  </div>
 	
-	<blockquote><div class="ui divided selection list">
-		<div class="ui header"><h2>Quick Link</h2></div>
-      <a href="#526"><div class="ui black circular large label">5/26</div></a>
-			<a href="#512"><div class="ui black circular large label">5/12</div></a>
-		<p></p><br />
-		
-	  <div class="ui header"><h2>Progress</h2></div>
-      
-			<a name="526"></a>
-			<blockquote><p><div class="ui circular black label">5/26</div></p>
-	  		<blockquote><div class="ui circular label">Weekly Goal</div>
-					<p>1. Hopfield neural network implementation</p>
-					<p>2. What if the path set in phase I are not disjoint ?</p>
-          <p>3. How to implement in SDN Controller ? initial plane ? tune up optimization ?
-          <p>4. Build a simulation with certain srt des pair and measure performance with traditional network, built-in SDN routing 
-					<br></br>
-					<p><div class="ui circular label">Achieve</div></p>
-					<blockquote><p>The simple implementation of HNN is create a single layer neural network, the next step is to specific the energy function which map the problem domain into a hyper-plane, which means it is specific to optimal only some kinds of problem.</p>
-											<p><a href="hnn-simple.html">hnn_naive_implementation</a></p></blockquote>
-				</blockquote>
-			</blockquote><br />
+    <blockquote><div class="ui divided selection list">
+        <div class="ui header"><h2>Quick Link</h2></div>
+            <a href="#729"><div class="ui black circular large label">7/29</div></a>
+            <a href="#602"><div class="ui black circular large label">6/02</div></a>
+            <a href="#526"><div class="ui black circular large label">5/26</div></a>
+            <a href="#512"><div class="ui black circular large label">5/12</div></a>
+    <p></p><br />		
     
+    <div class="ui header"><h2>Progress</h2></div>
+
+    <a name="729"></a>
+    <blockquote><p><div class="ui circular black label">7/29</div></p>
+    <blockquote><div class="ui circular label">Weekly Goal</div>
+        <p>1. When algorithm adjust the network, does the changing interval cause problem ?</p>
+        <p>2. What's "best" path to choose ?</p>
+        
+        <br />
+        <p><div class="ui circular label">Achieve</div></p>
+        <blockquote>
+        
+        <p>1. The subset of the best choise is also better than others, the only problem is that packet did not arrive in a sequencial order, but it's the algorithm factor, it should be avoid when designing learning-algorithm.</p>
+        <p>2. The shortest is not obviously the best one, also need to consider load-balance, successful rate, packet duplicate and control packet overhead. </p>                                  
+          
+        </blockquote></blockquote></blockquote><br /><hr>
     
-			<a name="512"></a>
-			<blockquote><p><div class="ui circular black label">5/12</div></p>
-	  		<blockquote><div class="ui circular label">Weekly Goal</div>
-					<p>1. Research neural network routing Algorithms</p>
-					<p>2. How to implement in SDN controller</p>
-					<br></br>
-					<p><div class="ui circular label">Achieve</div></p>
-					<p>1. Project site created.</p>
-					<p>2. By researching paper [10], Hopfield type neural network is include two phases:</p>
-					<blockquote><p>In phase I, a set of alternative route are determined for each source-destination pair.</p>
-											<p><a href="net-I.html">Phase_I_ex</a></p></blockquote>
-					<blockquote><p>In phase II, the traffic flow between each source-destination pair is optimally distributed to its corresponding alternative route.</p></blockquote>
-				</blockquote>
-			</blockquote><br />
+   
+    <a name="602"></a>
+    <blockquote><p><div class="ui circular black label">6/02</div></p>
+    <blockquote><div class="ui circular label">Weekly Goal</div>
+        <p>1. Complete learning-algorithm</p>
+        <p>2. Deploy to SDN controller</p>
+        
+        <br />
+        <p><div class="ui circular label">Achieve</div></p>
+        <blockquote>
+        
+        <p>1. The obstacle of implementation is to transform the energy function to mathmatical form, need more effort to handle the math detail, now the generic learning-algorithm instead.</p>
+        <p>2. Initially shoud collect the network informations which learning-algorithm needed, it may cause lots of time, but it's ok when start up. </p>                                  
+          
+        </blockquote></blockquote></blockquote><br /><hr>
+        
+                  
+    <a name="526"></a>
+    <blockquote><p><div class="ui circular black label">5/26</div></p>
+    <blockquote><div class="ui circular label">Weekly Goal</div>
+        <p>1. Hopfield neural network implementation</p>
+        <p>2. What if the path set in phase I are not disjoint ?</p>
+        <p>3. How to implement in SDN Controller ? initial plane ? tune up optimization ?
+        <p>4. Build a simulation with certain srt des pair and measure performance with traditional network, built-in SDN routing 
+
+        <br />
+        <p><div class="ui circular label">Achieve</div></p>
+        <blockquote>
+            
+        <p>The simple implementation of HNN is create a single layer neural network, the next step is to specific the energy function which map the problem domain into a hyper-plane, which means it is specific to optimal only some kinds of problem.</p>
+        <p><a href="hnn-simple.html">hnn_naive_implementation</a></p></blockquote>
+        </blockquote></blockquote><br /><hr>
+    
+          
+    <a name="512"></a>
+    <blockquote><p><div class="ui circular black label">5/12</div></p>
+    <blockquote><div class="ui circular label">Weekly Goal</div>
+        <p>1. Research neural network routing Algorithms</p>
+        <p>2. How to implement in SDN controller</p>
+
+        <br></br>
+        <p><div class="ui circular label">Achieve</div></p>
+
+        <p>1. Project site created.</p>
+        <p>2. By researching paper [10], Hopfield type neural network is include two phases:</p>
+
+        <blockquote>
+            <p>In phase I, a set of alternative route are determined for each source-destination pair.</p>
+            <p><a href="net-I.html">Phase_I_ex</a></p>
+        </blockquote>
+
+        <blockquote>
+            <p>In phase II, the traffic flow between each source-destination pair is optimally distributed to its corresponding alternative route.</p>
+        </blockquote>
+        </blockquote></blockquote><br /><hr>
 		
-		<div class="ui header"><h2>Reference</h2></div>
-			<blockquote><p>
-			<p>[1] The Road to SDN, Nick Feamster, Jennifer Rexford, Ellen Zegura, 2013.</p>
-			<p>[2] Ethane: Taking Control of the Enterprise, Martìn Casado, Michael J. Freedman, Justin Pettit, Jianying Luo, Nick 
-			McKeown, Scott Shenker, Sigcomm 2007.</p>
-			<p>[3] Design and Implementation of a Routing Control Platform, Matthew Caesar, Donald Caldwell, Nick Feamster, 
-			Jennifer Rexford, Aman Shaikh, Jacobus van der Merwe, NSDI 2005.</p>
-			<p>[4] OpenFlow: Enabling Innovation in Campus Networks, Nick McKeown, Tom Anderson, Hari Balakrishnan, Guru Parulkar, 
-			Larry Peterson, Jennifer Rexford, Scott Shenker, Jonathan Turner, CCR 2008.</p>
-			<p>[5] DevoFlow: Scaling Flow Management for High-performance Networks, Andrew R. Curtis, Jeffrey C. Mogul, Jean 
-			Tourrilhes, Praveen Yalagandula, Puneet Sharma, Sujata Banerjee, Sigcomm 2011.</p>
-			<p>[6] Hedera: Dynamic Flow Scheduling for Data Center Networks, Mohammad Al-Fares, Sivasankar Radhakrishnan, Barath 
-			Raghavan, Nelson Huang, Amin Vahdat, NSDI 2010.</p>
-			<p>[7] ElasticTree: Saving Energy in Data Center Networks, Brandon Heller, Srini Seetharaman, Priya Mahadevan, Yannis 
-			Yakoumis, Puneet Sharma, Sujata Banerjee, Nick McKeown, NSDI 2010.</p>
-			<p>[8] Introduction to Data Mining, Pang-Ning Tan, Michael Stinbach, Vipin Kumar, Pearson, 2008.</p>
-			<p>[9] A network in a laptop: rapid prototyping for software-defined networks, B Lantz, B Heller, N McKeown – 
-			Proceedings of the 9th ACM SIGCOMM Workshop on Hot Topics in Network, Article No. 19, 2010.</p>
-			<p>[10] A neural network method for minimum delay routing in packet-switched networks, G Feng, C Douligers - Computer Communications, 2001 - Elsevier</p>
-			</p><br /><br /></blockquote>
-	</div>
+		
+<div class="ui header"><h2>Reference</h2></div>
+<blockquote><p>
+
+    <p>[1] The Road to SDN, Nick Feamster, Jennifer Rexford, Ellen Zegura, 2013.</p>
+    <p>[2] Ethane: Taking Control of the Enterprise, Martìn Casado, Michael J. Freedman, Justin Pettit, Jianying Luo, Nick 
+    McKeown, Scott Shenker, Sigcomm 2007.</p>
+    <p>[3] Design and Implementation of a Routing Control Platform, Matthew Caesar, Donald Caldwell, Nick Feamster, 
+    Jennifer Rexford, Aman Shaikh, Jacobus van der Merwe, NSDI 2005.</p>
+    <p>[4] OpenFlow: Enabling Innovation in Campus Networks, Nick McKeown, Tom Anderson, Hari Balakrishnan, Guru Parulkar, 
+    Larry Peterson, Jennifer Rexford, Scott Shenker, Jonathan Turner, CCR 2008.</p>
+    <p>[5] DevoFlow: Scaling Flow Management for High-performance Networks, Andrew R. Curtis, Jeffrey C. Mogul, Jean 
+    Tourrilhes, Praveen Yalagandula, Puneet Sharma, Sujata Banerjee, Sigcomm 2011.</p>
+    <p>[6] Hedera: Dynamic Flow Scheduling for Data Center Networks, Mohammad Al-Fares, Sivasankar Radhakrishnan, Barath 
+    Raghavan, Nelson Huang, Amin Vahdat, NSDI 2010.</p>
+    <p>[7] ElasticTree: Saving Energy in Data Center Networks, Brandon Heller, Srini Seetharaman, Priya Mahadevan, Yannis 
+    Yakoumis, Puneet Sharma, Sujata Banerjee, Nick McKeown, NSDI 2010.</p>
+    <p>[8] Introduction to Data Mining, Pang-Ning Tan, Michael Stinbach, Vipin Kumar, Pearson, 2008.</p>
+    <p>[9] A network in a laptop: rapid prototyping for software-defined networks, B Lantz, B Heller, N McKeown – 
+    Proceedings of the 9th ACM SIGCOMM Workshop on Hot Topics in Network, Article No. 19, 2010.</p>
+    <p>[10] A neural network method for minimum delay routing in packet-switched networks, G Feng, C Douligers - Computer Communications, 2001 - Elsevier</p>
+
+</p><br /><br /></blockquote></div>
 	
   <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
   <script src="../packaged/javascript/semantic.min.js"></script>

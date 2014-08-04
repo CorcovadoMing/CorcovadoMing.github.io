@@ -87,7 +87,8 @@ h2{
 
 #second .bg{
 	background: url(images/trainers.png) 50% 0 no-repeat fixed;
-	height: 600px;
+	opacity: .5;
+    height: 600px;
 	margin: 0 auto;
 	padding: 0;
 	position: absolute;
