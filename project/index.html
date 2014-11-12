@@ -24,6 +24,8 @@
 
     <blockquote><div class="ui divided selection list">
         <div class="ui header"><h2>Quick Link</h2></div>
+            <a href="#1111"><div class="ui black circular large label">11/11</div></a>
+            <a href="#1104"><div class="ui black circular large label">11/04</div></a>
             <a href="#1028"><div class="ui black circular large label">10/28</div></a>
             <a href="#1021"><div class="ui black circular large label">10/21</div></a>
             <a href="#729"><div class="ui black circular large label">7/29</div></a>
@@ -33,6 +35,36 @@
     <p></p><br />
 
     <div class="ui header"><h2>Progress</h2></div>
+
+    <a name="1111"></a>
+    <blockquote><p><div class="ui circular black label">11/11</div></p>
+    <blockquote><div class="ui circular label">Weekly Goal</div>
+        <p>1. Controller hanging issue.</p>
+        <p>2. Complete the Algorithm integration.</p>
+
+        <br />
+        <p><div class="ui circular label">Achieve</div></p>
+        <blockquote>
+
+        <p>1. After examing the code, this issue is raised of the socket message from server, the buffer is a array of charater, if the first coming message is "route 0 19", and the following "route 1 1", the buffer will be "route 1 1'9'", '9' is the old dirty data, so the solution to this is to get the length of each message then cut the proper size of string in buffer to get rid of the dirty data.</p>
+        <p>2. Working (11/12). </p>
+
+        </blockquote></blockquote></blockquote><br /><hr>
+
+    <a name="1104"></a>
+    <blockquote><p><div class="ui circular black label">11/04</div></p>
+    <blockquote><div class="ui circular label">Weekly Goal</div>
+        <p>1. Problem : My Custom Topology didn't work in Mininet </p>
+        <p>2. Continuous integrate the AI algorithm with Ryu controller</p>
+
+        <br />
+        <p><div class="ui circular label">Achieve</div></p>
+        <blockquote>
+
+        <p>1. Found that if there exist a loop in a topology, the host can't ping any others, maybe is the 'Switch-loop' issue, solution of conventional network is to apply the spanning tree, but I thought that the decision of AI algorithm automatically solve this issue. </p>
+        <p>2. Done implementing the socket and done combined controller with AI algorithm, rest work is the rule-installing part.</p>
+
+        </blockquote></blockquote></blockquote><br /><hr>
 
     <a name="1028"></a>
     <blockquote><p><div class="ui circular black label">10/28</div></p>
@@ -44,7 +76,7 @@
         <p><div class="ui circular label">Achieve</div></p>
         <blockquote>
 
-        <p>1. Done. The detail can be view at <a href="https://onedrive.live.com/redir?page=view&resid=95FEC5E617C77CDF!501&authkey=!ALBjVfxGtn5CND8">Note Link</a></p>
+        <p>1. Done. <a href="https://onedrive.live.com/redir?page=view&resid=95FEC5E617C77CDF!501&authkey=!ALBjVfxGtn5CND8">Note Link</a></p>
         <p>2. As the note above, preparing to implement a socket program to communicate between SDN controller and the routing algorithm, Protocol Buffer which defined a data type (as JSON, XML) for communication by google will be used. </p>
 
         </blockquote></blockquote></blockquote><br /><hr>
