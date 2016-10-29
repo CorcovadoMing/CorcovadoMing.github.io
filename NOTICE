@@ -1,0 +1,2 @@
+The image in project is 420x300, using
+`convert <orig img> -resize 420x300! <img>` to resize to fit size
